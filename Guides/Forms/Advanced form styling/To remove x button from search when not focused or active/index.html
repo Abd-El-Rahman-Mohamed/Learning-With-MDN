@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="UTF-8" />
+		<title>Remove x button from search element when not focused or active</title>
+		<style>
+            /* This code is to make the x button disappear when the input loses focus */
+            input[type="search"]:not(:focus, :active)::-webkit-search-cancel-button {
+                display: none;
+            }
+		</style>
+		<link rel="icon" type="image/x-icon" href="./favicon.ico" />
+	</head>
+	<body>
+		<form>
+			<h2><code>&lt;search&gt;</code> input</h2>
+			<p>
+				<label for="search">search: </label>
+				<input id="search" name="search" type="search" />
+			</p>
+		</form>
+	</body>
+</html>
