@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="UTF-8" />
+		<title>none value for appearance property</title>
+		<style>
+			body {
+				display: flex;
+				justify-content: space-evenly;
+			}
+
+			form.none-appearance input[type="search"] {
+				appearance: none;
+			}
+		</style>
+		<link rel="icon" type="image/x-icon" href="./favicon.ico" />
+	</head>
+	<body>
+		<form>
+			<h2><code>&lt;search&gt;</code>without <code>appearance: none;</code></h2>
+			<p>
+				<label for="search">search: </label>
+				<input id="search" name="search" type="search" />
+			</p>
+		</form>
+
+		<form class="none-appearance">
+			<h2><code>&lt;search&gt;</code>With <code>appearance: none;</code></h2>
+			<p>
+				<label for="search">search: </label>
+				<input id="search" name="search" type="search" />
+			</p>
+		</form>
+	</body>
+</html>
